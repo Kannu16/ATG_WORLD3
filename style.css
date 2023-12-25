@@ -1,0 +1,296 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+.main-section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+.show {
+  display: block;
+  opacity: 1;
+}
+
+.section-left{
+  width: 40%;
+  background-color: #11235A;
+  padding: 20px 0 20px 20px;
+  z-index: 1000;
+  height: 100vh;
+  position: relative;
+}
+
+.section-left .circle{
+  position: absolute;
+  z-index: 2;
+  right: -130px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #11235A;
+  top: 10%;
+  transition: opacity 0.5s ease-in-out; 
+}
+
+/* Section left page 1 */
+.section-left-page-1 {
+  height: 100%;
+  
+}
+
+.section-left-page-2 {
+  height: 100%;
+}
+
+.section-left-inner-content-page-2{
+  position: absolute;
+  bottom: 5%;
+}
+
+.section-left-inner-content-page-1{
+  position: absolute;
+  bottom: 5%;
+}
+
+
+
+
+
+
+
+
+/* Section right */
+.section-right{
+  width: 60%;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* page 1 css */
+
+.section-right-page-1{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: #596FB7;
+}
+
+.section-right-page-1 img{
+  position: absolute;
+}
+
+.section-right-page-1 .section-right-page-1-img2{
+  width: 23%;
+  right: 25%;
+  top: 12%;
+}
+
+.section-right-page-1 .section-right-page-1-img3{
+  width: 23%;
+  bottom: 0;
+}
+
+.section-right-page-1 .section-right-page-1-img4{
+  right: 6%;
+  top: -14%;
+
+}
+
+.section-right-page-1 .section-right-page-1-img5{
+  right: 0;
+  bottom: -11%;
+}
+
+/* Page 2  */
+.section-right-page-2{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(57, 38, 105);
+}
+
+.section-right-page-2 img{
+  position: absolute;
+}
+
+.section-right-page-2 .section-right-page-2-img1{
+  width: 33%;
+  left: 25%;
+  top: 25%;
+}
+
+.section-right-page-2 .section-right-page-2-img2{
+  width: 25%;
+  right: 10%;
+  top: -14%;
+}
+
+/* page 3 */
+.section-right-page-3{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(44, 123, 112);
+}
+
+.section-right-page-3 img{
+  position: absolute;
+}
+
+.section-right-page-3 .section-right-page-3-img1{
+  width: 33%;
+  left: 25%;
+  top: 25%;
+  bottom: 0;
+}
+
+.section-right-page-3 .section-right-page-3-img2{
+  width: 25%;
+  right: 10%;
+  top: -10%;
+}
+
+/* page 4 */
+
+.section-right-page-4{
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-right-page-4 .section-right-page-4-img1{
+  width: 30%;
+}
+
+.section-right-page-4 .section-right-page-4-img2{
+  width: 30%;
+}
+
+/* page - 6 */
+.section-right-page-6{
+  display: flex;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  background-color: #4cb05f;
+}
+
+.section-right-page-6 .section-right-page-6-img1{
+  width: 30%;
+  margin-top: 15%;
+}
+
+.section-right-page-6 .section-right-page-6-img2{
+ width: 30%;
+}
+
+/* Page 7 */
+.section-right-page-7{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: cadetblue;
+}
+
+.section-right-page-7 img{
+  position: absolute;
+}
+
+.section-right-page-7 .section-right-page-7-img3{
+  right: 0;
+  top: 20%;
+  width: 25%;
+}
+
+.section-right-page-7 .section-right-page-7-img5{
+  right: 30%;
+  width: 25%;
+  bottom: -25%;
+}
+
+.section-right-page-7 .section-right-page-7-img4{
+  left: 10%;
+  width: 25%;
+  bottom: -15%;
+}
+
+.section-right-page-7 .section-right-page-7-img2{
+  right: 30%;
+  width: 25%;
+  top: 0%;
+}
+
+.section-right-page-7 .section-right-page-7-img1{
+  left: 10%;
+  width: 25%;
+  top: -13%;
+}
+
+/* owl caraousal css */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+.owl-nav button:focus {
+    outline: none;
+}
+
+/* ///Media queries */
+@media only screen and (max-width: 650px) {
+   .main-section-mobile{
+    display: block!important;
+   }
+   .main-section{
+    display: none;
+   }
+}
